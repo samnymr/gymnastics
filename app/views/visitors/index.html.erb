@@ -2,10 +2,12 @@
 			<div class="wrapper">
 				<div class="content">
           <div class="col-md-6 mx-auto">
-            <%#= image_tag("Layout/logo_2.png", alt: "Logo", title: "Logo", style: "margin-bottom: 20px;") %>
+            <%= image_tag("logo.jpg", alt: "Logo", title: "Logo", style: "margin-bottom: 20px;") %>
 					<h1>We'll be right with you!</h1>
 					<p>Whilst we are working on the website please sign up below!</p>
-					<p>We are still running classes saturday morning, 10 - 11 and 11 - 12</p>
+					<p>We are still running classes Saturday mornings</p>
+          <p>Beginner Classes 10am-11am</p>
+          <p>Improved / Intermediate and Advance 11am-12pm</p>
           <%= form_for @subscriber do |f| %>
           <div class="input-group">
             <%= f.email_field :email, class: 'textbox', placeholder: 'Enter your email address' %>
